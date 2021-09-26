@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC } from 'react';
+import { Router } from '@reach/router';
+import Home from './features/home/Home';
+import Faq from './features/faq/Faq';
+import Cart from './features/cart/Cart';
+import Cat from './features/cat/Cat';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: FC = () => (
+  <Router>
+    <Home path='/' />
+    <Faq path='/faq' />
+    <Cart path='/cart' />
+    <Cat path='/cat/:catId' />
+  </Router>
+);
 
 export default App;

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Freddie",
+    "breed": "British Shorthair",
+    "age": "2 years",
+    "sex": "Male",
+    "photoLink": "https://placekitten.com/400/400",
+    "description": "Amazing!"
+  },
+  {
+    "id": 2,
+    "name": "Theodore",
+    "breed": "Domestic Shorthair",
+    "age": "10 years",
+    "sex": "Male",
+    "photoLink": "https://placekitten.com/400/400",
+    "description": "Amazing!"
+  },
+  {
+    "id": 3,
+    "name": "Benji",
+    "breed": "Persian",
+    "age": "8 years",
+    "sex": "Male",
+    "photoLink": "https://placekitten.com/400/400",
+    "description": "Amazing!"
+  },
+  {
+    "id": 4,
+    "name": "Luna",
+    "breed": "Maine Coon",
+    "age": "7 months",
+    "sex": "Female",
+    "photoLink": "https://placekitten.com/400/400",
+    "description": "Amazing!"
+  },
+  {
+    "id": 5,
+    "name": "Nero",
+    "breed": "Ragdoll",
+    "age": "1 year",
+    "sex": "Female",
+    "photoLink": "https://placekitten.com/400/400",
+    "description": "Amazing!"
+  },
+  {
+    "id": 6,
+    "name": "Tinkerbell",
+    "breed": "Scottish Fold",
+    "age": "3 years",
+    "sex": "Feale",
+    "photoLink": "https://placekitten.com/400/400",
+    "description": "Amazing!"
+  }
+]
