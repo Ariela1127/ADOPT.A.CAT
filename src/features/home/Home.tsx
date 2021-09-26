@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { useNavigate, RouteComponentProps } from '@reach/router';
 import { FaCat as CatIcon } from 'react-icons/fa';
 import { styled } from '../../stitches.config';
-import kittens from '../../data/kittens.json';
+import catsData from '../../data/cats.json';
 import Layout from '../layout/Layout';
 
 interface HomeProps extends RouteComponentProps {}
@@ -10,11 +10,10 @@ interface HomeProps extends RouteComponentProps {}
 const Container = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  // justifyContent: 'center'
   alignItems: 'center'
 });
 
-const CatsList = styled('article', {
+const CatsList = styled('section', {
   display: 'grid',
   gridTemplateColumns: 'repeat(3, auto)',
   gridGap: '1rem',
@@ -59,7 +58,7 @@ const Home: FC<HomeProps> = () => {
           Check Out Our <CatIcon />!
         </h1>
         <CatsList>
-          {kittens.map(kitten => (
+          {catsData.map(kitten => (
             <CatLink key={kitten.id} onClick={() => navigate(`/cat/${kitten.id}`)}>
               <img src={kitten.photoLink} alt={kitten.name} />
               <span>Adopt Now</span>

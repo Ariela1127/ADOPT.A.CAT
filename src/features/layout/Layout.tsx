@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 
 const Container = styled('div', {
   display: 'grid',
-  height: '100vh',
+  minHeight: '100vh',
   gridTemplateRows: 'auto 1fr auto',
   backgroundColor: 'rgb($black)',
   color: 'white'

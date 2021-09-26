@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Link } from '@reach/router';
+import { FaCat as CatIcon } from 'react-icons/fa';
 import { styled } from '../../stitches.config';
 
 const Nav = styled('nav', {
@@ -15,6 +16,7 @@ const StyledLink = styled(Link, {
   textDecoration: 'none',
   textTransform: 'uppercase',
   color: 'rgb($white)',
+  fontSize: 'x-large',
   '&:hover': {
     color: 'rgb($gray)'
   }
@@ -24,6 +26,7 @@ const Message = styled('div', {
   flexGrow: '1',
   textTransform: 'uppercase',
   textAlign: 'center',
+  fontSize: 'x-large',
   '& span': {
     fontWeight: 'bold'
   }
@@ -34,7 +37,11 @@ const NavBar: FC = () => (
     <StyledLink to='/'>Home</StyledLink>
     <StyledLink to='/faq'>FAQ</StyledLink>
     <Message>
-      Welcome to <span>ADOPT.A.CAT</span>
+      Welcome to{' '}
+      <span>
+        ADOPT.A.
+        <CatIcon />
+      </span>
     </Message>
     <StyledLink to='/cart'>Cart</StyledLink>
   </Nav>
